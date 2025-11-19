@@ -1,10 +1,10 @@
 /* Variáveis de Cores (Revisadas para o tema Feminino e Sério) */
 :root {
     --color-primary: #595959;       /* Cinza Escuro Sutil (substitui o preto duro) */
-    --color-secondary: #C08593;    /* Rosa Queimado/Blush (Feminino e Profissional) */
-    --color-accent: #EFEFEF;       /* Fundo de Card Suave */
-    --color-text-dark: #333;       /* Texto Escuro */
-    --color-background: #F8F8F8;   /* Fundo Principal Cinza Claro */
+    --color-secondary: #C08593;     /* Rosa Queimado/Blush (Feminino e Profissional) */
+    --color-accent: #EFEFEF;        /* Fundo de Card Suave */
+    --color-text-dark: #333;        /* Texto Escuro */
+    --color-background: #F8F8F8;    /* Fundo Principal Cinza Claro */
     --color-shadow: rgba(0, 0, 0, 0.08);
 }
 
@@ -261,4 +261,44 @@ footer {
     .section-block {
         padding: 20px;
     }
+}
+
+/*
+ * =========================================================
+ * NOVOS ESTILOS SOLICITADOS (BOTÃO LINKEDIN)
+ * =========================================================
+*/
+.linkedin-section {
+    text-align: center;
+    padding: 40px 20px;
+    /* Usa o fundo claro para seguir o esquema de cores dos blocos */
+    background-color: var(--color-background); 
+    border-top: 1px solid var(--color-secondary); /* Linha sutil de destaque */
+    margin-top: 20px;
+}
+
+.linkedin-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white; /* Mantemos o branco para contraste no fundo do LinkedIn */
+    background-color: #C08593; /* Cor oficial do LinkedIn para reconhecimento */
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Sombra padrão */
+    line-height: 1;
+}
+
+.linkedin-button i {
+    margin-right: 8px;
+}
+
+.linkedin-button:hover {
+    background-color: #C08593; /* Cor mais escura no hover */
+    transform: translateY(-2px);
+    /* Sombra mais proeminente no hover para efeito 3D */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
 }
